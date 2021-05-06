@@ -1,0 +1,324 @@
+/* * * * * * * * * * * * * * * * *
+ * Creating a New Classic
+ * * * * * * * * * * * * * * * * */
+#create-classic .creation-form {
+    text-align: left;
+    padding: 1rem;
+}
+
+/* Form section widths */
+#create-classic .creation-form > .section {
+    width: 95%;
+    margin: 1rem auto;
+}
+
+#create-classic .creation-form > .section.split {
+    width: 45%;
+}
+
+#create-classic .creation-form > .section.center {
+    width: 60%;
+}
+
+#create-classic .creation-form > .section.center.large {
+    width: 80%;
+}
+
+/* Help text */
+#create-classic .help-text {
+    margin-top: 0.5rem;
+    margin-bottom: 2rem;
+}
+
+#create-classic .help-text > i {
+    color: rgba(0, 0, 0, 0.5);
+}
+
+/* Form components */
+#create-classic label, #create-classic input, #create-classic textarea {
+    display: block;
+    margin: 0 auto;
+}
+
+#create-classic label {
+    font-size: 1.5rem;
+    font-weight: 500;
+    margin-bottom: 0.5rem;
+    margin-top: 2rem;
+}
+
+#create-classic label.center {
+    text-align: center;
+}
+
+#create-classic input[type="text"] {
+    outline-color: black;
+}
+
+#create-classic .article-title > h1 {
+    text-align: left;
+    padding: 1rem;
+    width: 100%;
+    background-color: white;
+    box-shadow: 0 2px 10px 0 rgba(0, 0, 0, 0.05), 0 12px 10px 0 rgba(0, 0, 0, 0.05);
+
+}
+
+#create-classic textarea {
+    width: 100%;
+    outline-color: black;
+    resize: none;
+    padding: 0.5rem;
+    font-size: 1.2rem;
+    font-family: 'Roboto', sans-serif;
+}
+
+/* Post Title */
+#create-classic input[name="article-title"] {
+    font-size: 2em;
+    padding: 0.5em;
+    font-weight: bold;
+    width: 95%;
+    margin: 0;
+}
+
+/* Featured Status */
+#create-classic .star {
+    color: rgba(0, 0, 0, 0.5);
+}
+
+#create-classic .star + p {
+    font-weight: 500;
+    color: rgba(0, 0, 0, 0.8);
+}
+
+#create-classic .star.on {
+    color: #ffd800;
+}
+
+#create-classic .star.on + p {
+    border-bottom: #f1cd01 5px solid;
+    margin: 0.5em auto;
+    font-weight: bold;
+    transition: all .32s ease;
+    font-size: 1.2em;
+}
+
+#create-classic .star:hover {
+    color: rgba(0, 0, 0, 0.3);
+    cursor: pointer;
+}
+
+#create-classic .star:active {
+    transform: scale(0.93,0.93) translateY(2px);
+    transition: all .32s ease;
+    color: #ffd800;
+}
+
+#create-classic .star.on:hover {
+    color: #ffd800;
+}
+
+/* Article category */
+#create-classic .section.with-icons {
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+#create-classic .section.with-icons label, #create-classic .section.with-icons .help-text {
+    flex: 0 100%;
+    margin-bottom: 1rem;
+}
+
+#create-classic .section.with-icons > span {
+    margin: 1rem;
+    flex: 0 15%;
+}
+
+#create-classic .section.with-icons div.icon + p {
+    border-bottom: transparent 5px solid;
+    font-weight: 500;
+    color: rgba(0, 0, 0, 0.8);
+}
+
+#create-classic div.section.with-icons div.icon {
+    color: rgba(0, 0, 0, 0.5);
+}
+
+#create-classic .section.with-icons div.icon:hover {
+    cursor: pointer;
+    color: rgba(0, 0, 0, 0.3);
+}
+
+#create-classic .section.with-icons .icon.on {
+    color: black;
+}
+
+#create-classic div.section.with-icons div.icon.on + p {
+    border-bottom: black 5px solid;
+    margin: 0.5em auto;
+    font-weight: bold;
+    transition: all .32s ease;
+    font-size: 1.2em;
+    color: black;
+}
+
+#create-classic .section.with-icons .icon.on:hover {
+    color: black;
+    cursor: default;
+}
+
+/* When modifying an existing article */
+#create-classic div.section.with-icons.hide-inactive span {
+    margin: 0 1rem;
+}
+
+#create-classic div.section.with-icons.hide-inactive span.off {
+    display: none;
+    visibility: hidden;
+}
+
+#create-classic div.section.with-icons.hide-inactive div.icon.on:hover {
+    cursor: not-allowed;
+}
+
+#create-classic div.section.with-icons.hide-inactive div.icon.on + p {
+    width: 100%;
+    margin-bottom: 1rem;
+}
+
+#create-classic div.section.with-icons.hide-inactive .star.on + p {
+    width: 100%;
+}
+
+/* Cover Photo */
+#create-classic  .section.center > img {
+    width: 100%;
+}
+
+#create-classic  .set-image {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    text-align: center;
+    margin-top: 1rem;
+}
+
+#create-classic .set-image .site-button {
+    display: inline;
+}
+
+#create-classic .set-image .site-button > p {
+    margin-top: 0;
+}
+
+#create-classic  .set-image p.file-name {
+    display: inline;
+    margin-left: 1rem;
+}
+
+#create-classic  .set-image #delete-icon:hover {
+    cursor: pointer;
+    color: rgba(236, 13, 13, 0.7);
+}
+
+/* Description fields */
+textarea[name="article-cover-photo-desc"] {
+    height: 100px;
+}
+
+textarea[name="article-cover-photo-info"] {
+    height: 200px;
+}
+
+/* Authors */
+#article-authors {
+    width: 50%;
+}
+
+#article-author-info {
+    height: 200px;
+}
+
+.advanced-editor .ck-editor {
+    font-size: 1.2em;
+}
+
+.advanced-editor label {
+    display: none !important;
+    visibility: hidden !important;
+}
+
+.advanced-editor .ck-editor__main > .ck-editor__editable {
+    min-height: 500px;
+}
+
+.advanced-editor .help-text i:hover {
+    color: rgba(0 ,0, 0, 0.4);
+    cursor: pointer;
+}
+
+.advanced-editor .help-text > span {
+    color: rgba(0, 0, 0, 0.6);
+    float: right;
+    font-size: 0.8em;
+}
+
+.advanced-editor .editor-help {
+    margin-left: 1em;
+    padding: 0.5em 1em;
+    font-weight: 500;
+    border-left: rgba(0, 0, 0, 0.4) 0.5em solid;
+}
+
+.advanced-editor .editor-help p.help {
+    margin-left: 1em;
+    font-weight: 300;
+}
+
+/* Submit Area */
+#submit-section {
+    margin-bottom: 0;
+}
+
+#create-classic #submit-section .section.with-icons > span {
+    margin: 2rem;
+}
+
+/* Preview */
+.section.hidden {
+    display: none;
+    visibility: hidden;
+}
+
+.warning {
+    color: #b70000;
+}
+
+#preview.visible {
+    text-align: center;
+}
+
+#preview h2 {
+    text-align: center;
+    margin: 0;
+    padding-top: 2rem;
+    font-weight: 400;
+    font-size: 2rem;
+}
+
+.full-article {
+    width: 80%;
+    margin: 2em auto;
+}
+
+/* Validation */
+.error-text{
+    font-size: 1.2rem;
+    color: #e00101;
+    text-align: left;
+    font-style: italic;
+}

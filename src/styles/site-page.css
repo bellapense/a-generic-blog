@@ -1,0 +1,78 @@
+/* Stylesheet for "static" site site-pages */
+/* TODO: Fix the styles for this page */
+/* * * * * * * * * * * * * * * * *
+ * Common styles for all site-pages
+ * * * * * * * * * * * * * * * * */
+.site-page {
+    font-size: 1.2em;
+    text-align: left;
+    max-width: 100%;
+    margin: 0 auto;
+}
+
+.site-page .loading-content {
+    margin: 0 auto;
+    text-align: center;
+}
+.site-page .loading-content > h2 {
+    font-weight: 200;
+}
+
+.site-page .page-header > h1 {
+    color: black;
+    text-align: center;
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 3rem;
+    font-weight: 300;
+    margin: 0 auto;
+    padding: 0.5rem;
+    border-bottom: 3px solid black;
+}
+
+.site-page .page-content {
+    padding: 1rem 2rem;
+}
+
+.site-page .page-content a {
+    color: #07728a;
+}
+
+.site-page .page-content figure > img {
+    width: 100%;
+}
+
+.site-page .page-content figure {
+    text-align: center;
+    width: 85%;
+    margin: 1em auto;
+}
+
+.site-page .page-content figcaption {
+    background-color: rgba(0, 0, 0, 0.02);
+    padding: 1em;
+    font-weight: 300;
+    text-align: center;
+}
+
+.site-page .page-content figcaption > i {
+    display: block;
+}
+
+.site-page .page-content.raw-html-embed {
+    width: 85%;
+    text-align: center;
+    margin: auto;
+}
+
+.site-page .page-content .raw-html-embed > iframe {
+    width: 100%;
+}
+
+/* * * * * * * * * * * * * * * * *
+ * Responsive styles
+ * * * * * * * * * * * * * * * * */
+@media screen and (max-width: 880px) {
+    .site-page .page-content figure {
+        width: 100%;
+    }
+}

@@ -1,0 +1,28 @@
+/* * * * * * * * * * * * * * * * *
+ * <Error404Page />
+ * * * * * * * * * * * * * * * * */
+#error-404-page {
+    margin: 2rem;
+    padding: 2rem;
+    text-align: center;
+    max-width: 100%;
+    border-top: 3px solid black;
+    border-bottom: 3px solid black;
+}
+
+#error-404-page h1 {
+    font-family: 'Bebas Neue', sans-serif;
+    font-weight: 300;
+    font-size: 3rem;
+    margin: 0 auto;
+    padding: 0.5rem;
+}
+
+#error-404-page p {
+    font-size: 2rem;
+    font-weight: 200;
+}
+
+/* * * * * * * * * * * * * * * * * * * * * * * * * *
+ * Responsive Layout
+ * * * * * * * * * * * * * * * * * * * * * * * * * */

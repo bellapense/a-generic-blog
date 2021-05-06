@@ -1,0 +1,86 @@
+/* * * * * * * * * * * * * * * * *
+ * <EditPage />
+ * * * * * * * * * * * * * * * * */
+
+/* * * * * * * * * * * * * * * * *
+ * Styles for edit page content
+ * * * * * * * * * * * * * * * * */
+.edit-page-content {
+    max-width: 90%;
+    margin: 0 auto;
+}
+
+.edit-page-content > h1 {
+    border-bottom: black 20px solid;
+    margin: 0;
+    padding: 1rem 0;
+}
+
+.edit-page-content .update-info {
+    font-size: 1.2rem;
+    text-align: left;
+    width: fit-content;
+    color: rgba(0, 0, 0, 0.9);
+}
+
+.edit-page-content .site-page {
+    width: 80%;
+    padding: 1.5rem;
+    background-color: white;
+    margin: 1rem auto;
+}
+
+.edit-page-content .site-page  h1 {
+    border-top: 3px solid black;
+}
+
+.edit-page-content .editor {
+    width: 80%;
+    margin: 2rem auto;
+}
+
+.edit-page-content .editor .help-text {
+    margin-top: 1rem;
+    text-align: left;
+}
+
+.edit-page-content > h2 {
+    text-align: center;
+    margin: 2em 0;
+}
+
+.edit-page-content .options-section {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    text-align: center;
+}
+
+.edit-page-content .options-section > div {
+    margin: 1rem 2rem;
+    flex: 0 20%;
+}
+
+.edit-page-content .options-section p {
+    margin-top: 0.75rem;
+    font-size: 1.2rem;
+    color: rgba(0, 0, 0, 0.8);
+}
+
+.edit-page-content .options-section .icon {
+    color: rgba(0, 0, 0, 0.5);
+}
+.edit-page-content .options-section i:hover {
+    cursor: pointer;
+    color: rgba(0, 0, 0, 0.3);
+}
+
+.loading > h2 {
+    font-weight: lighter;
+    padding-top: 2rem;
+}
+
+/* * * * * * * * * * * * * * * * * * * * * * * * * *
+ * Responsive Layout
+ * * * * * * * * * * * * * * * * * * * * * * * * * */
+

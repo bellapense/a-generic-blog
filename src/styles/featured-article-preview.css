@@ -1,0 +1,83 @@
+/* * * * * * * * * * * * * * * * *
+ * Featured article preview for all article types
+ * * * * * * * * * * * * * * * * */
+.featured-article-preview {
+    text-align: left;
+    padding: 1.5rem;
+    background-color: white;
+
+}
+
+.featured-article-preview:hover {
+    cursor: default;
+    background-color: white;
+}
+
+.featured-article-preview .preview-content {
+    margin-left: 10px;
+    border-left: rgba(0, 0, 0, 0.25) 5px solid;
+    padding-left: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.featured-article-preview > a {
+    text-decoration: none;
+    color: rgba(0, 0, 0, 0.8);
+}
+
+.featured-article-preview .image-container {
+    position: relative;
+    min-height: 200px;
+}
+
+.featured-article-preview h2 {
+    position: absolute;
+    top: 0;
+    padding: 0.75rem;
+    max-width: 100%;
+    z-index: 1;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.75);
+    font-weight: 600;
+    font-family: 'Antonio', sans-serif;
+    margin: 0;
+    font-size: 2.5rem;
+}
+
+.featured-article-preview h2 > i {
+    font-size: 2.5rem;
+}
+
+.featured-article-preview .image-container > img {
+    width: 100%;
+}
+
+.featured-article-preview .image-container .number-photos {
+    text-align: right;
+    position: absolute;
+    right: 2rem;
+    top: 0;
+    font-size: 2rem;
+    padding: 1rem;
+    margin: 0;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.75);
+}
+
+.featured-article-preview .image-container .number-photos > p {
+    padding: 0;
+    margin: 0;
+}
+
+.featured-article-preview p.author-date {
+    margin-top: 0;
+    font-size: 1.2rem;
+    color: rgba(0, 0, 0, 0.7);
+}
+
+.featured-article-preview p.preview-text {
+    font-size: 1.2rem;
+    color: rgba(0, 0, 0, 0.9);
+    text-align: justify;
+}

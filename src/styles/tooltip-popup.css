@@ -1,0 +1,106 @@
+/* * * * * * * * * * * * * * * * *
+ * <ToolTipPopup  />
+ * * * * * * * * * * * * * * * * */
+.popup-content {
+    margin: auto;
+    width: fit-content;
+    max-width: 300px;
+    display: flex;
+    flex-direction: row;
+}
+
+.popup-overlay {
+    display:none;
+}
+
+[data-popup='tooltip'].popup-overlay {
+    display: none;
+    background: none;
+}
+
+/* Popup animation */
+@keyframes anvil {
+    0% {
+        transform: scale(1) translateY(0px);
+        opacity: 0;
+        box-shadow: 0 0 0 rgba(241, 241, 241, 0);
+    }
+    1% {
+        transform: scale(0.96) translateY(10px);
+        opacity: 0;
+        box-shadow: 0 0 0 rgba(241, 241, 241, 0);
+    }
+    100% {
+        transform: scale(1) translateY(0px);
+        opacity: 1;
+        box-shadow: 0 0 500px rgba(241, 241, 241, 0);
+    }
+}
+
+.popup-content {
+    -webkit-animation: anvil 0.3s cubic-bezier(0.38, 0.1, 0.36, 0.9) forwards;
+}
+
+.tooltip-popup div.popup-container {
+    position: relative;
+    display: inline-block;
+    padding: 2rem;
+    border: 2px solid black;
+    text-align: center;
+    background-color: white;
+    color: black;
+    box-shadow: 10px 10px 50px 14px rgba(0, 0, 0, 0.25), -10px -10px 50px 14px rgba(0, 0, 0, 0.22);
+    font-family: 'Roboto', sans-serif;
+}
+
+.tooltip-popup div.popup-container h1 {
+    font-weight: 400;
+    font-size: 2rem;
+}
+
+.tooltip-popup div.popup-container #popup-close-button {
+    position: absolute;
+    top: 0.75rem;
+    right: 0.75rem;
+    font-size: 1.5rem;
+}
+
+.tooltip-popup div.popup-container #popup-close-button:hover {
+    cursor: pointer;
+}
+
+/* Danger popup for serious actions that cannot be taken back (deleting) */
+.tooltip-popup.danger div.popup-container {
+    color: rgb(196, 37, 37);
+    border-color: rgb(196, 37, 37);
+}
+
+.tooltip-popup.danger div.popup-container .site-button > p {
+    color: rgb(196, 37, 37);
+    border-color: rgb(196, 37, 37);
+}
+
+.tooltip-popup.danger div.popup-container .site-button > p:hover{
+    color: white;
+    background-color: rgb(196, 37, 37);
+    cursor: pointer;
+}
+
+.tooltip-popup.danger div.popup-container p {
+    font-size: 1.2rem;
+
+}
+
+/* * * * * * * * * * * * * * * * * * * * * * * * * *
+ * Responsive Layout
+ * * * * * * * * * * * * * * * * * * * * * * * * * */
+@media screen and (max-width: 950px) {
+    .tooltip-popup div.popup-container {
+        margin-right: 4rem;
+    }
+}
+@media screen and (max-width: 740px) {
+    .tooltip-popup div.popup-container {
+        margin-right: 5rem;
+    }
+}

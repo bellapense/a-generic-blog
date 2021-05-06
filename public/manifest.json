@@ -1,0 +1,6 @@
+{
+  "short_name": "A Generic Blog",
+  "name": "A Generic Blog",
+  "start_url": ".",
+  "display": "standalone"
+}

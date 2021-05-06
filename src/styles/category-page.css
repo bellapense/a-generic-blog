@@ -1,0 +1,46 @@
+.category-page h1 {
+    font-family: 'Bebas Neue', sans-serif;
+    font-weight: 300;
+    text-align: center;
+    font-size: 3rem;
+    margin: 0 auto;
+    padding: 0.5rem;
+    border-bottom: 3px solid black;
+}
+
+.category-page .page-content .article-preview-tiles {
+    margin: 0 auto;
+    padding: 0 1rem;
+}
+
+.category-page .page-content .article-preview-tiles > h2 {
+    font-family: 'Bebas Neue', sans-serif;
+    font-weight: 300;
+    font-size: 2.5rem;
+    margin: 1rem auto;
+    padding: 1rem;
+    border-top: 2px solid black;
+    border-bottom: 2px solid black;
+}
+
+/* * * * * * * * * * * * * * * * *
+ * Placeholder styles
+ * * * * * * * * * * * * * * * * */
+.category-page .featured-article-preview .placeholder-image {
+    height: 500px;
+}
+
+
+/* * * * * * * * * * * * * * * * *
+ * Responsive styles
+ * * * * * * * * * * * * * * * * */
+@media screen and (max-width: 750px) {
+    .category-page .page-header {
+        padding: 0.5rem;
+    }
+    .category-page h1 {
+        text-align: left;
+        font-size: 3rem;
+        margin: 1rem;
+    }
+}

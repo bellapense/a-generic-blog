@@ -1,0 +1,641 @@
+/* Stylesheet for all Article-related components */
+
+/* * * * * * * * * * * * * * * * *
+ * <Article />
+ * * * * * * * * * * * * * * * * */
+.article {
+    text-align: left;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1.2em;
+    max-width: 100%;
+    padding: 2em;
+    margin: 2rem auto;
+    background-color: white;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.article > hr {
+    color: rgba(0, 0, 0, 0.8);
+    width:100%;
+    margin: 1rem auto;
+}
+
+.article > h1 {
+    font-weight: 600;
+    font-family: 'Antonio', sans-serif;
+    text-align: left;
+    font-size: 3em;
+    margin: 0;
+}
+
+/* Category of the article */
+.article .article-category {
+    padding: 0.25rem;
+    border-bottom: 5px solid black;
+    width: fit-content;
+    margin: 0.5rem 0;
+}
+
+.article .article-category a {
+    text-decoration: none;
+    color: black;
+}
+
+.article .article-category:hover a{
+    color: white;
+}
+
+.article .article-category:hover {
+    cursor: pointer;
+    background-color: black;
+    color: white;
+    transition: .4s;
+}
+
+.article .article-category p, .article .article-category a {
+    text-align: left;
+    font-weight: bolder;
+    margin: 0.5rem 0;
+}
+.article .article-category i {
+    font-size: 2rem;
+}
+
+/* Article header */
+.article-header {
+    margin-left: 1rem;
+    margin-bottom: 1rem;
+}
+
+.article-header > p.author {
+    font-size: 1.1em;
+    font-weight: lighter;
+}
+
+
+#article-cover-photo {
+    width: 100%;
+}
+
+.cover-image {
+    width: 90%;
+}
+
+.cover-image > p {
+    font-style: italic;
+    font-weight: lighter;
+    margin-top: 0.5em;
+}
+
+.article .share-links.section i {
+    color: black;
+    margin-right: 0.5em;
+}
+
+.article .share-links.section i:hover {
+    color: rgba(0, 0, 0, 0.75);
+    cursor: pointer;
+}
+
+/* Article body */
+.article-body p {
+    text-align: justify;
+    line-height: 1.5em;
+    font-size: 1.15em;
+}
+.article-body p:last-child {
+    margin-bottom: 0;
+}
+.article-body p:first-child {
+    margin-top: 0;
+}
+
+.article-body > h2 {
+    margin-top: 0;
+    font-size: 2.5rem;
+    font-weight: 300;
+}
+
+.article-body > h3 {
+    margin-top: 0;
+    font-size: 2.25rem;
+    font-weight: 300;
+}
+
+.article-body > h4 {
+    margin-top: 0;
+    font-size: 2rem;
+    font-weight: 300;
+}
+
+.article-body {
+    padding: 1.5em;
+}
+
+.article-body div.custom-in-article {
+    margin: 2rem auto;
+    text-align: center;
+    width: 100%;
+}
+
+.article-body div.custom-in-article img {
+    max-width: 100%;
+}
+
+div.editors-note {
+    font-style: italic;
+    font-size: 1.4rem;
+    font-weight: lighter;
+    margin-bottom: 1.5rem;
+}
+
+/* Embedded content */
+.article-body figure > img {
+    width: 100%;
+}
+
+.article-body figure {
+    text-align: center;
+    min-width: 80%;
+    max-width: 80%;
+    margin: 1em auto;
+}
+
+.article-body figcaption {
+    background-color: rgba(0, 0, 0, 0.02);
+    padding: 1em;
+    font-weight: 300;
+    text-align: justify;
+}
+
+.article-body figcaption > i {
+    display: block;
+}
+
+.article-body .raw-html-embed {
+    width: 80%;
+    text-align: center;
+    margin: auto;
+}
+
+.article-body .raw-html-embed > iframe {
+    width: 100%;
+}
+
+.article-body a {
+    color: rgba(0, 0, 0, 0.6);
+}
+.article-body a:hover {
+    color: rgba(0, 0, 0, 0.5);
+}
+
+/* Article footer */
+.article-footer {
+    font-style: italic;
+    padding: 1em;
+}
+
+.article-footer p:first-child {
+    margin-top: 0;
+}
+
+.article-footer .info.section {
+    margin-bottom: 1em;
+    font-weight: lighter;
+}
+
+.article-footer .info.section a {
+    text-decoration: none;
+    color: rgba(0, 0, 0, 0.8);
+}
+
+.article-footer .info.section a:hover {
+    text-decoration: underline;
+    color: rgba(0, 0, 0, 0.75);
+}
+
+/* Placeholder loading styles */
+.article.placeholder .placeholder-image {
+    width: 80%;
+    animation-duration: 3s;
+    animation-fill-mode: forwards;
+    animation-iteration-count: infinite;
+    animation-name: placeHolderShimmer;
+    animation-timing-function: linear;
+    background: #f6f7f8;
+    background: linear-gradient(to right, #eeeeee 8%, #dddddd 18%, #eeeeee 33%);
+    background-size: 1000px 170px;
+    height: 500px;
+    overflow: hidden;
+}
+
+.article.placeholder h1 {
+    display: inline-block;
+    background-color: #222;
+    border-radius: 100px;
+    height: 3rem;
+    width: 100%;
+    margin: 5px 0;
+    opacity: .1;
+    animation: fading 3s infinite;
+}
+
+.article.placeholder h1.half {
+    width: 50%;
+    margin-bottom: 1rem;
+}
+
+.article.placeholder p {
+    display: inline-block;
+    background-color: #444;
+    border-radius: 100px;
+    height: 1.3rem;
+    width: 100%;
+    margin: 0.5rem 0;
+    opacity: .1;
+    animation: fading 3s infinite;
+}
+.article.placeholder p.half {
+    width: 50%;
+}
+
+/* * * * * * * * * * * * * * * * *
+ * <ArticleTile />
+ * * * * * * * * * * * * * * * * */
+.article-tile {
+    display: flex;
+    flex-direction: column;
+    flex: 0 100%;
+    padding: 0.75rem;
+    margin: 1em;
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.1), 0 3px 10px 0 rgba(0, 0, 0, 0.1);
+    text-align: left;
+    align-content: center;
+}
+
+.article-tile a {
+    display: block;
+    text-decoration: none;
+    color: rgba(0, 0, 0, 0.8);
+}
+
+.article-tile h2 {
+    font-family: 'Antonio', sans-serif;
+    font-size: 2rem;
+    padding: 0.5rem 0;
+    margin: 0;
+}
+
+.article-tile.medium {
+    display: none;
+    visibility: hidden;
+}
+
+.article-tile .article-preview {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.article-tile:hover {
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.1), 0 12px 40px 0 rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+}
+
+.article-tile .tile-image-container {
+    min-width: 50%;
+    max-width: 50%;
+    margin: auto 1em auto 0;
+    height: fit-content;
+}
+
+.article-tile .tile-image-container img {
+    width: 100%;
+}
+
+.article-preview .preview-content {
+    align-self: center;
+    width: 100%;
+}
+
+.article-preview  p {
+    font-size: 1.1em;
+}
+
+.article-preview  p.preview-text {
+    margin-bottom: 0;
+}
+
+.article-preview  p.author-date {
+    color: rgba(0, 0, 0, 0.6);
+    margin-bottom: 1rem;
+    font-size: 1rem;
+}
+
+/* For multimedia tiles */
+.multimedia-tile .article-tile .tile-image-container {
+    min-width: 60%;
+    height: auto;
+    object-fit: cover;
+    position: relative;
+}
+
+.multimedia-tile .article-tile .preview-content {
+    width: 100%;
+}
+
+.multimedia-tile .article-tile.medium .tile-image-container {
+    min-width: 100%;
+}
+
+.multimedia-tile h2 > .category {
+    font-weight: 200;
+}
+
+.multimedia-tile h2 > .display-date {
+    font-weight: 300;
+    font-size: 1.5rem;
+}
+.multimedia-tile h2 > i {
+    color: rgba(0, 0, 0, 0.7);
+}
+
+.multimedia-tile .medium {
+    width: 80%;
+}
+
+.multimedia-tile .article-tile .tile-image-container .number-photos {
+    text-align: right;
+    position: absolute;
+    right: 2rem;
+    top: 0;
+    padding: 1rem;
+    margin: 0;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.75);
+}
+
+.multimedia-tile .article-tile .tile-image-container .number-photos > p {
+    padding: 0;
+    margin: 0;
+}
+
+/* Placeholder loading styles */
+.article-tile .placeholder-image {
+    width: 100%;
+    animation-duration: 1.7s;
+    animation-fill-mode: forwards;
+    animation-iteration-count: infinite;
+    animation-name: placeHolderShimmer;
+    animation-timing-function: linear;
+    background: #f6f7f8;
+    background: linear-gradient(to right, #eeeeee 8%, #dddddd 18%, #eeeeee 33%);
+    background-size: 1000px 170px;
+    height: 300px;
+    overflow: hidden;
+}
+
+.article-tile.placeholder h2 {
+    display: inline-block;
+    background-color: #444;
+    border-radius: 100px;
+    height: 2rem;
+    min-width: 100%;
+    margin: 5px 0;
+    opacity: .1;
+    animation: fading 3s infinite;
+}
+.article-tile.placeholder h2.half {
+    min-width: 50%;
+    max-width: 50%;
+}
+
+.article-tile.placeholder .preview-content {
+    width: 100%;
+}
+
+.article-tile.placeholder p {
+    display: inline-block;
+    background-color: #444;
+    border-radius: 100px;
+    height: 1.2rem;
+    width: 100%;
+    margin: 5px 0;
+    opacity: .1;
+    animation: fading 3s infinite;
+}
+
+.article-tile.placeholder p.author-date, .article.placeholder p.author-date {
+    background-color: #1c1b1b;
+    width: 80%;
+    margin: 1rem 0;
+}
+
+.article-tile.placeholder p.half {
+    width: 50%;
+}
+
+@keyframes fading {
+    0% {
+        opacity: .1;
+    }
+    50% {
+        opacity: .2;
+    }
+    100% {
+        opacity: .1;
+    }
+}
+@keyframes placeHolderShimmer{
+    0%{
+        background-position: -468px 0
+    }
+    100%{
+        background-position: 468px 0
+    }
+}
+/* * * * * * * * * * * * * * * * *
+ * <ArticleCategory />
+ * * * * * * * * * * * * * * * * */
+.article-category {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 2em;
+    margin: 0;
+    max-width: 100%;
+}
+
+.article-category > h2 {
+    width: 100%;
+    text-align: center;
+    font-size: 2.5rem;
+    padding: 0.5em 0;
+    font-family: 'Bebas Neue', sans-serif;
+    color: black;
+    border-top: rgba(0, 0, 0, 0.3) 1px solid;
+    border-bottom: rgba(0, 0, 0, 0.3) 1px solid;
+}
+
+/* * * * * * * * * * * * * * * * *
+ * Related article previews
+ * * * * * * * * * * * * * * * * */
+.related-article-previews {
+    margin: 2rem;
+}
+
+.related-article-previews .article-tile {
+    border: none;
+    padding: 1rem;
+    margin: 2rem auto;
+    background-color: white;
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.1), 0 3px 10px 0 rgba(0, 0, 0, 0.1);
+}
+
+.related-article-previews > h2 {
+    color: black;
+}
+
+.related-article-previews .article-tile:hover {
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.1), 0 12px 40px 0 rgba(0, 0, 0, 0.1);
+    background-color: white;
+}
+
+/* * * * * * * * * * * * * * * * *
+ * Responsive styles
+ * * * * * * * * * * * * * * * * */
+@media screen and (max-width: 1300px) {
+    /* Embedded content */
+    .article-body figure > img {
+        width: 100%;
+    }
+    .article-body figure {
+        text-align: center;
+        min-width: 90%;
+        max-width: 90%;
+    }
+    .article-body .raw-html-embed {
+        width: 90%;
+    }
+}
+
+@media screen and (max-width: 850px) {
+    .article-tile {
+        margin: 1em 0 1em 0;
+    }
+    .article-body {
+        padding: .5em;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .article-tile.large {
+        display: none;
+        visibility: hidden;
+    }
+    .article-tile.medium {
+        display: block;
+        visibility: visible;
+    }
+    .article-tile.medium p.author-date {
+        margin-top: 0;
+    }
+}
+
+@media screen and (max-width: 750px) {
+    .article-body figure {
+        text-align: center;
+        min-width: 100%;
+        max-width: 100%;
+    }
+    .article {
+        padding-left: 1em;
+        padding-right: 1em;
+        font-size: 1.2em;
+        margin: 2em auto;
+    }
+
+    .article .article-header {
+        margin: 0;
+    }
+    .article .cover-image.section {
+        width: 100%;
+    }
+
+    .article-body p {
+        line-height: 1.5em;
+        font-size: 1.15em;
+    }
+
+    .article-body > h2 {
+        font-size: 2.5rem;
+    }
+
+    .article-body > h3 {
+        font-size: 2.25rem;
+    }
+
+    .article-body > h4 {
+        font-size: 2rem;
+    }
+
+    .article-body {
+        padding: .1em;
+    }
+
+    .article-tile {
+        margin: 1em 0 1em 0;
+    }
+
+    /* embeded content */
+    .article-body figure > img {
+        width: 100%;
+    }
+
+    .article-body figure {
+        text-align: center;
+        min-width: 90%;
+        max-width: 90%;
+    }
+
+    .article-body .raw-html-embed {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 680px) {
+    .article-tile .article-preview {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .article-tile.medium .tile-image-container {
+        min-width: 100%;
+        max-width: 100%;
+        margin: 0;
+    }
+}
+
+@media screen and (max-width: 550px) {
+    .article {
+        padding-left: .75em;
+        padding-right: .75em;
+        font-size: 1em;
+    }
+    .multimedia-tile .medium {
+        width: 100%;
+    }
+    .multimedia-tile .medium .tile-image-container {
+        padding: 0;
+        margin-bottom: 0;
+    }
+    .multimedia-tile .article-tile {
+        margin-left: 0;
+    }
+    .related-article-previews {
+        margin: 2rem 0.5rem;
+    }
+}

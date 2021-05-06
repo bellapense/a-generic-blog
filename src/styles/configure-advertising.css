@@ -1,0 +1,139 @@
+/* * * * * * * * * * * * * * * * *
+ * <SelectAdvertisement />
+ * * * * * * * * * * * * * * * * */
+.select-advertisement {
+    max-width: 1400px;
+    text-align: center;
+    margin: 0 auto;
+    background-color: rgba(0, 0, 0, 0.02);
+    padding: 2em 2em 4em;
+}
+
+.select-advertisement h1 {
+    font-weight: lighter;
+    margin-top: 1em;
+}
+
+.select-advertisement h2 {
+    text-align: center;
+    margin-top: 2em;
+    font-weight: lighter;
+    margin-bottom: 0;
+}
+
+.select-advertisement .option-list {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    margin: 2em auto;
+    padding: 10px;
+}
+
+.select-advertisement .option-list .option {
+    text-decoration: none;
+    display: block;
+    padding: 1em;
+    margin: 0 auto;
+}
+
+
+.select-advertisement > a {
+    text-decoration: none;
+    color: rgba(0, 0, 0, 0.6);
+    font-size: 1.3em;
+}
+
+.select-advertisement > a:hover {
+    text-decoration: none;
+    color: rgba(0, 0, 0, 0.4);
+}
+
+/* * * * * * * * * * * * * * * * *
+ * <ConfigureAdvertisement />
+ * * * * * * * * * * * * * * * * */
+.configure-advertisement {
+    max-width: 1400px;
+    margin: 2rem auto;
+    padding: 1em 2em;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.02);
+}
+
+.configure-advertisement > h1 {
+    font-weight: lighter;
+    margin-top: 1em;
+    padding-bottom: 1em;
+    text-align: center;
+}
+
+.configure-advertisement .current-advertisement h2 {
+    font-weight: 300;
+    margin-top: 1em;
+    padding-bottom: 1em;
+    text-align: center;
+}
+
+.current-advertisement > .section.center {
+    width: 70%;
+    margin: 2rem auto;
+    text-align: center;
+}
+
+.current-advertisement label {
+    font-size: 1.5em;
+    font-weight: 500;
+    text-align: left;
+    width: 100%;
+}
+
+.current-advertisement img {
+    max-width: 100%;
+}
+
+.current-advertisement img.sidebar-ad {
+    max-width: 400px;
+}
+
+.current-advertisement .set-image {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    text-align: center;
+}
+
+.current-advertisement .set-image .site-button {
+    margin: 0;
+    display: inline;
+}
+
+.current-advertisement .set-image p.file-name {
+    display: inline;
+    margin-left: 1rem;
+}
+
+.current-advertisement .set-image #delete-icon:hover {
+    cursor: pointer;
+    color: rgba(236, 13, 13, 0.7);
+}
+
+.current-advertisement input[type="text"] {
+    outline-color: darkslategray;
+    display: block;
+    width: 100%;
+    padding: 0.5rem;
+}
+
+.current-advertisement p.help-text {
+    text-align: left;
+    width: 100%;
+}
+
+.current-advertisement .submit-section i {
+    color: rgba(0, 0, 0, 0.5);
+    cursor: pointer;
+}
+
+.current-advertisement .submit-section i:hover {
+    color: rgba(0, 0, 0, 0.3);
+    cursor: pointer;
+}

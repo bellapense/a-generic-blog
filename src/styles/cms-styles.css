@@ -1,0 +1,154 @@
+/* * * * * * * * * * * * * * * * *
+ * CMS Header
+ * * * * * * * * * * * * * * * * */
+header#cms-header {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    max-width: 1500px;
+    width: 100%;
+    margin: 1rem auto 0 auto;
+    border-top: 3px solid black;
+    border-bottom: 3px solid black;
+}
+
+header#cms-header h1 > a {
+    color: black;
+    text-decoration: none;
+}
+
+header#cms-header h1 span.sub-heading {
+    display: block;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    font-size: 2.5rem;
+}
+
+header#cms-header div.site-button {
+    margin: 0;
+    text-align: right;
+}
+
+header#cms-header div.site-button > p {
+    margin: 0.5rem 0;
+    text-align: right;
+    font-weight: 500;
+}
+
+header#cms-header p.username {
+    font-size: 1.3rem;
+}
+
+#content-view {
+    margin-top: -1rem;
+    padding-top: 1rem;
+    visibility: hidden;
+}
+
+/* * * * * * * * * * * * * * * * *
+ * CMS Content
+ * * * * * * * * * * * * * * * * */
+div#cms-content {
+    max-width: 1400px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 2rem 0;
+    background-color: rgba(0, 0, 0, 0.025);
+}
+
+div#cms-content > h1 {
+    font-weight: 700;
+    padding: 1rem 0;
+    margin: 0;
+    text-align: center;
+}
+
+div#cms-content .row-list {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 1rem auto;
+}
+
+div#cms-content .row-list > .cms-option {
+    margin: 1rem;
+}
+
+/* HRs */
+div#cms-content hr {
+    width: 95%;
+    color: rgba(0, 0, 0, 0.2);
+    margin: 1em auto;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+}
+
+/* * * * * * * * * * * * * * * * *
+ * CMS Dashboard
+ * * * * * * * * * * * * * * * * */
+div.cms-dashboard {
+    display: flex;
+    flex-direction: row;
+    padding: 1rem 0;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+/* * * * * * * * * * * * * * * * *
+ * CMS Options
+ * * * * * * * * * * * * * * * * */
+div.cms-option {
+    padding: 2rem 1rem 1rem 1rem;
+    border: 4px black solid;
+    width: 150px;
+    height: 150px;
+    background-color: white;
+    margin: 0.5rem;
+}
+
+div.cms-option.rectangular {
+    padding: 2rem 1rem 1rem 1rem;
+    border: 4px black solid;
+    width: 275px;
+    height: 75px;
+    flex: 0 30%;
+}
+
+div.cms-option:hover {
+    color: white;
+    background-color: black;
+    cursor: pointer;
+    box-shadow: 5px 5px 15px 15px rgba(0,0,0,0.1),
+    -5px -5px 15px 15px rgba(0,0,0,0.1);
+    transition: .4s;
+}
+
+div.cms-option p {
+    margin-top: 0.5rem;
+    font-size: 2rem;
+    font-weight: 600;
+}
+
+div.cms-option i {
+    display: block;
+}
+
+/* * * * * * * * * * * * * * * * *
+ * <PublishSuccess  />
+ * * * * * * * * * * * * * * * * */
+.success-page h1 {
+    font-weight: 200;
+    font-size: 4rem;
+}
+
+.success-page h2 {
+    font-size: 2rem;
+    font-weight: 300;
+}
+
+/* Confetti */
+.confetti {
+    position: absolute;
+    top: 30%;
+}

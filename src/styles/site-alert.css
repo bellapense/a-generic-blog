@@ -1,0 +1,82 @@
+/* Popup alert styles */
+.site-alert-popup{
+    font-family: 'Roboto', sans-serif;
+    max-width: 1400px;
+    margin: 0 auto;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    background-color: rgba(0, 0, 0, 0.02);
+    color:#FFFFFF;
+    width:95%;
+}
+
+.popup-content {
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+}
+
+.popup-overlay {
+    background-color: rgba(0, 0, 0, 0.3);
+}
+
+div.site-alert-content {
+    width: 600px;
+    padding: 2em;
+    text-align:center;
+    color: black;
+    background-color: white;
+    box-shadow: 10px 10px 50px 14px rgba(0,0,0,0.25), -10px -10px 50px 14px rgba(0,0,0,0.22);
+}
+
+div.site-alert-content > h1 {
+    font-weight: 300;
+}
+
+div.site-alert-content hr {
+    border: 1px solid rgba(0, 0, 0, 0.5);
+}
+
+div.site-alert-content > p.alert-message {
+    font-weight: 300;
+    font-size: 1.3rem;
+}
+
+/* For the loading content type */
+div.site-alert-content div.status > .success {
+    font-size: 1.5rem;
+}
+div.site-alert-content div.status > .lds-ellipsis {
+    margin: 0;
+}
+
+/* For the confirmation content type */
+div.site-alert-content div.options {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+div.site-alert-content div.options > .site-button {
+    display: inline;
+    flex: 0 40%;
+}
+div.site-alert-content .site-button.cancel > p {
+    color: #810d10;
+    border: solid 2px #560305;
+}
+
+div.site-alert-content .site-button.cancel > p:hover {
+    background: #560305;
+    color: white;
+}
+
+div.site-alert-content div.options > .site-button p {
+    width: 100%;
+}
+
+/* For the alert content type */
+div.site-alert-content div.confirm > .site-button p {
+    font-size: 1.5rem;
+}
+

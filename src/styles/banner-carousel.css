@@ -1,0 +1,109 @@
+#banner-carousel {
+    position: relative;
+    width: 100%;
+    margin-bottom: 1rem;
+}
+
+#banner-carousel .item-container {
+    width: 100%;
+    height: auto;
+    margin: 0 auto;
+    outline: none;
+    text-align: left;
+}
+
+#banner-carousel .img-container {
+    height: 500px;
+    margin: 0 auto;
+    position: relative;
+}
+
+#banner-carousel .img-container > img {
+    width: auto;
+    min-width: 100%;
+    min-height: 100%;
+    height: auto;
+    object-fit: fill;
+    object-position: center;
+}
+
+#banner-carousel .img-container > .img-caption {
+    position: absolute;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.75);
+    padding: 1rem;
+    margin: 0;
+    width: 100%;
+    color: white;
+}
+
+#banner-carousel .img-caption h2 {
+    font-weight: 600;
+    font-family: 'Antonio', sans-serif;
+    margin: 0;
+    padding-right: 1rem;
+    font-size: 2rem;
+}
+
+#banner-carousel .img-caption h2 > i {
+    font-size: 2.5rem;
+}
+
+#banner-carousel .img-caption .site-button > a {
+    font-size: 1rem;
+    display: inline;
+}
+
+
+/* Buttons and pagination */
+#banner-carousel .rec.rec-arrow-left {
+    position: absolute;
+    z-index: 10;
+    left: 0;
+    top: 50%;
+}
+
+#banner-carousel .rec.rec-arrow-right {
+    position: absolute;
+    z-index: 10;
+    right: 0;
+    top: 50%;
+}
+
+#banner-carousel .rec.rec-arrow {
+    background-color: transparent;
+    box-shadow: 0 0 3px 0 rgba(0, 0, 0, 0.7);
+    color: rgba(0, 0, 0, 0.9);
+}
+
+#banner-carousel .rec.rec-arrow:disabled {
+    display: none;
+}
+
+#banner-carousel .rec.rec-arrow:hover {
+    box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.75);
+    border: black;
+    color: black;
+    background-color: white;
+}
+
+#banner-carousel .rec.rec-pagination {
+    position: absolute;
+    bottom: -1.5rem;
+}
+
+#banner-carousel .rec.rec-dot_active {
+    background-color: rgba(0, 0, 0, 0.5);
+    box-shadow: 0 0 3px 3px rgba(0, 0, 0, 0.3);
+}
+
+#banner-carousel .rec.rec-dot_active:hover {
+    cursor: default;
+    background-color: rgba(0, 0, 0, 0.5) !important;
+    box-shadow: 0 0 3px 3px rgba(0, 0, 0, 0.3) !important;
+}
+
+#banner-carousel .rec.rec-dot:hover {
+    box-shadow: 0 0 3px 3px rgba(0, 0, 0, 1);
+    transition: none;
+}
